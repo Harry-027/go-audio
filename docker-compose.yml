@@ -1,0 +1,6 @@
+version: '2.0'
+services:
+  opentts:
+    image: synesthesiam/opentts
+    ports:
+      - "5500:5500"
