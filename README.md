@@ -12,7 +12,7 @@ This solution kit consists of an Opentts engine hosted on docker and a CLI clien
 * CLI & Opentts engine setup is now ready to use.
 * Run the command `go-audio --help` to explore various operations.
 
-## Generate the audio files
+## Generate the audio files :-
 ---
 * Run the command `go-audio aud --input=PATH_TO_PDF --output=PATH_TO_OUTPUT --voice=male|female`.
 * Default value for given flags ::
