@@ -11,6 +11,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
+// split text content into chunks ...
 func SplitStr(longString string, maxLen int) []string {
 	var splits []string
 	var l, r int
@@ -24,6 +25,7 @@ func SplitStr(longString string, maxLen int) []string {
 	return splits
 }
 
+// Generate audio output for given text content ...
 func genOutput(inPath, outPath, voiceType string) {
 	fmt.Println("Processing ...")
 	var wg sync.WaitGroup
@@ -55,6 +57,7 @@ var genCmd = &cobra.Command{
 	},
 }
 
+// Cobra add generate command ...
 func init() {
 	home, err := homedir.Dir() // Fetch the current user home dir.
 	utils.PanicErr(err)        // Panic in case user dir not available

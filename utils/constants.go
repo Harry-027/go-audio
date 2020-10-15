@@ -1,5 +1,6 @@
 package utils
 
+// App constants ...
 const (
 	FLAG_INPUT          = "input"
 	FLAG_INPUT_DESC     = "Provide path to pdf file"

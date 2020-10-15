@@ -13,6 +13,7 @@ import (
 	"sync"
 )
 
+// Read the given pdf file ...
 func ReadPdf(filePath string) (string, error) {
 	var content bytes.Buffer
 	f, r, err := pdf.Open(filePath)
@@ -40,6 +41,7 @@ func ReadPdf(filePath string) (string, error) {
 	return content.String(), nil
 }
 
+// get the voice type ...
 func getVoice(voiceType string) string {
 	if voiceType == MALE_VOICE {
 		return MALE_SET_VOICE
@@ -47,6 +49,7 @@ func getVoice(voiceType string) string {
 	return DEFAULT_VOICE
 }
 
+// Generate the audio for given content ...
 func GenAudio(content, voiceType, outPath string, i int, wg *sync.WaitGroup) {
 	fmt.Println("File in Process :: ", i)
 	err := os.MkdirAll(outPath, 0755) // make directory if not exists
