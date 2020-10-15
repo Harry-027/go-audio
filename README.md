@@ -18,6 +18,6 @@ This solution kit consists of an Opentts engine hosted on docker and a CLI clien
 * Default value for given flags ::
     * input=./sample_pdf/test.pdf
     * output=homeDir/audio-go/output
-    * voice=female.
+    * voice=female
 
 
